@@ -15,17 +15,3 @@ export const signinInput = z.object({
 
 export type SigninInput = z.infer<typeof signinInput>;
 
-export const createPostInput = z.object({
-    title: z.string().min(1),
-    content: z.string().min(1),
-    });
-
-export type CreatePostInput = z.infer<typeof createPostInput>;
-
-export const updatePostInput = z.object({
-    id: z.string().min(1),
-    title: z.string().min(1),
-    content: z.string().min(1),
-    });
-
-export type UpdatePostInput = z.infer<typeof updatePostInput>;
